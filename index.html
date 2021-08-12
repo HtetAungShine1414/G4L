@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ola HTML Template</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/bootsnav.css">
+	<link rel="stylesheet" href="css/component.css">
+	<link rel="stylesheet" href="css/slicknav.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="body" id="body">
+
+
+
+	
+<div class="row container-fluid col-md-12 animated slide">
+    <div class="row">
+        <img class="img-responsive" src="img/pexels-photo-460672.jpeg" alt="">
+    </div>
+    
+    
+</div>
+
+
+<!-- 
+///////////////////////////////////////////////////////////////////////////////////////////
+The ICONS SECTION STARTS HERE
+/////////////////////////////////////////////////////////////////////////////////////////// 
+-->
+<div class="container-fluid">
+<div class="row col-md-12 col-sm-12">
+    <div class="main clearfix center">
+				<navicon id="menu" class="navicon row">					
+					<ul>
+						<li>
+							<a href="#services">
+								<span class="icon"> 
+									<i aria-hidden="true" class="icon-home"></i>
+								</span>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="#client">
+								<span class="icon"> 
+									<i aria-hidden="true" class="icon-services"></i>
+								</span>
+								<span>Services</span>
+							</a>
+						</li>
+						<li>
+							<a href="#works">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-portfolio"></i>
+								</span>
+								<span>Portfolio</span>
+							</a>
+						</li>
+					
+					</ul>
+				</navicon>
+			</div>
+			</div>
+</div>
+<!-- 
+///////////////////////////////////////////////////////////////////////////////////////////
+The ICONS SECTION ENDS HERE
+/////////////////////////////////////////////////////////////////////////////////////////// 
+-->
+
+
+
+
+<div class="container-fluid animated bounceInRight" id="services">
+	
+	    <div class="col-md-12 col-sm-12 inner-row">
+		    <div class="title"> <h2><span class="titleblue">Home</span> </h2> </div>
+		    <div class="services">
+		    <ul>
+		    	<h1>Welcome From</h1>
+				<h2>Gooners 4 Life Myanmar</h2>
+				
+		    </ul>
+		    </div>
+    </div>
+</div>
+
+<!-- THIS IS THE CLIENTS SECTION -->
+<div id="client" class="container-fluid">
+	<div class="col-md-12 col-sm-12 inner-row">	
+	  <div class="title"> <h2>Watch<span class="titleblue">Live</span> </h2> </div>
+    	<div class="client">
+    		<ul>
+    			<button>Link 1</button>
+				<button>Link 2</button>
+				<button>Link 3</button>
+				<button>Link 4</button>
+				<button>LInk 5</button>
+				<button>Link 6</button>
+    		</ul>
+    	</div>
+    </div>
+</div>
+<!-- THIS IS THE CLIENTS SECTION -->
+
+<!-- THIS IS THE CLIENTS SECTION -->
+<div class="container-fluid"> 
+<div class="title" id="works"> <h2>Live<span class="titleblue">Score</span> </h2> </div>
+	<div class="col-md-12 col-sm-12 inner-row nopadding">	
+	 
+    	<div class="col-md-6  bgblue height nopadding"></div>
+    	<div class="col-md-6 height nopadding"></div>
+    </div>
+</div>
+<!-- THIS IS THE CLIENTS SECTION --><footer class="nav navbar-fixed-bottom navbar-default"><span class="copyright">&copy 2017 | ADLINK CONCEPT </span> </footer>
+
+<body>
+	
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootsnav.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.easings.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+
+
+
+<script>
+$(document).ready(function(){
+	$('#mmenu').slicknav();
+});
+
+$(document).ready(function(){
+$(".services li:odd").css({"background-color" : "#1691be", "color" : "#ffffff !important"});
+});
+
+//Scrolling	
+$("body").niceScroll({
+cursorcolor:"#1691be",
+cursorwidth:"5px"
+});
+
+$('#body').onePageNav({
+	currentClass: 'current',
+	changeHash: false,
+	scrollSpeed: 1400,
+	scrollThreshold: 0.5,
+	filter: '',
+	easing: 'swing',
+	begin: function() {
+		//I get fired when the animation is starting
+	},
+	end: function() {
+		//I get fired when the animation is ending
+	},
+	scrollChange: function($currentListItem) {
+		//I get fired when you enter a section and I pass the list item of the section
+	}
+});
